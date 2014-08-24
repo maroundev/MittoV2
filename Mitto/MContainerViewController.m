@@ -26,14 +26,14 @@
     CGRect uiFrame = self.menuView.frame;
     CGRect uiFrame2 = self.mainView.frame;
     //click on button
-    if (uiFrame.origin.x == -83) {
+    if (uiFrame.origin.x == -100) {
         
         NSLog(@"you cna see it!! x: %f, y: %f, width: %f, height: %f", uiFrame2.origin.x, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height);
         [UIView animateWithDuration:0.3f animations:^{
             [self.menuView setFrame:CGRectMake(0, uiFrame.origin.y, uiFrame.size.width, uiFrame.size.height)];
         }];
         [UIView animateWithDuration:0.3f animations:^{
-            [self.mainView setFrame:CGRectMake(uiFrame2.origin.x+83, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height)];
+            [self.mainView setFrame:CGRectMake(uiFrame2.origin.x+100, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height)];
         }];
         
         
@@ -42,10 +42,10 @@
         
         NSLog(@"you cannot see it!! x: %f, y: %f, width: %f, height: %f", uiFrame2.origin.x, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height);
         [UIView animateWithDuration:0.3f animations:^{
-            [self.menuView setFrame:CGRectMake(-83, uiFrame.origin.y, uiFrame.size.width, uiFrame.size.height)];
+            [self.menuView setFrame:CGRectMake(-100, uiFrame.origin.y, uiFrame.size.width, uiFrame.size.height)];
         }];
         [UIView animateWithDuration:0.3f animations:^{
-            [self.mainView setFrame:CGRectMake(uiFrame2.origin.x-83, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height)];
+            [self.mainView setFrame:CGRectMake(uiFrame2.origin.x-100, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height)];
         }];
 
     }

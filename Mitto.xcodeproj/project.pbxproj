@@ -50,7 +50,12 @@
 		14FBCCF919A9435A00332BEF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF819A9435A00332BEF /* DetailViewController.m */; };
 		B282AEBD19A9929C00ED71C9 /* MContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B282AEBC19A9929C00ED71C9 /* MContainerViewController.m */; };
 		B282AEBF19A9B8B700ED71C9 /* LoginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEBE19A9B8B700ED71C9 /* LoginBackground.png */; };
-		B282AEC119A9BA4D00ED71C9 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEC019A9BA4D00ED71C9 /* Login.png */; };
+		B282AEC319A9BB7C00ED71C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEC219A9BB7C00ED71C9 /* Icon.png */; };
+		B282AEC519A9BD2A00ED71C9 /* Mitto.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEC419A9BD2A00ED71C9 /* Mitto.png */; };
+		B282AEC719A9BD9400ED71C9 /* Login-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEC619A9BD9400ED71C9 /* Login-1.png */; };
+		B282AEC919A9BDCB00ED71C9 /* fbbuttons.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEC819A9BDCB00ED71C9 /* fbbuttons.png */; };
+		B282AECB19A9BDD100ED71C9 /* twitterbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AECA19A9BDD100ED71C9 /* twitterbutton.png */; };
+		B282AECD19A9BEF100ED71C9 /* Menu: Home.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AECC19A9BEF100ED71C9 /* Menu: Home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,7 +122,12 @@
 		B282AEBB19A9929C00ED71C9 /* MContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MContainerViewController.h; sourceTree = "<group>"; };
 		B282AEBC19A9929C00ED71C9 /* MContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MContainerViewController.m; sourceTree = "<group>"; };
 		B282AEBE19A9B8B700ED71C9 /* LoginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground.png; sourceTree = "<group>"; };
-		B282AEC019A9BA4D00ED71C9 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		B282AEC219A9BB7C00ED71C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B282AEC419A9BD2A00ED71C9 /* Mitto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mitto.png; sourceTree = "<group>"; };
+		B282AEC619A9BD9400ED71C9 /* Login-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-1.png"; sourceTree = "<group>"; };
+		B282AEC819A9BDCB00ED71C9 /* fbbuttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbbuttons.png; sourceTree = "<group>"; };
+		B282AECA19A9BDD100ED71C9 /* twitterbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterbutton.png; sourceTree = "<group>"; };
+		B282AECC19A9BEF100ED71C9 /* Menu: Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu: Home.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +169,12 @@
 		14E5E4D619A972D0001E5A72 /* pics4menu */ = {
 			isa = PBXGroup;
 			children = (
-				B282AEC019A9BA4D00ED71C9 /* Login.png */,
+				B282AECA19A9BDD100ED71C9 /* twitterbutton.png */,
+				B282AECC19A9BEF100ED71C9 /* Menu: Home.png */,
+				B282AEC819A9BDCB00ED71C9 /* fbbuttons.png */,
+				B282AEC619A9BD9400ED71C9 /* Login-1.png */,
+				B282AEC419A9BD2A00ED71C9 /* Mitto.png */,
+				B282AEC219A9BB7C00ED71C9 /* Icon.png */,
 				B282AEBE19A9B8B700ED71C9 /* LoginBackground.png */,
 				141A9AEC19A98F2700271DEB /* Nav Bar.png */,
 				144D25DE19A987450077C833 /* Opacity Bar 2.png */,
@@ -405,20 +420,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B282AECD19A9BEF100ED71C9 /* Menu: Home.png in Resources */,
+				B282AEC319A9BB7C00ED71C9 /* Icon.png in Resources */,
 				14FBCCA219A92D6F00332BEF /* Main_iPad.storyboard in Resources */,
 				14E5E4E219A9738F001E5A72 /* job2x.png in Resources */,
 				14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */,
 				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
 				141A9AED19A98F2700271DEB /* Nav Bar.png in Resources */,
-				B282AEC119A9BA4D00ED71C9 /* Login.png in Resources */,
 				144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */,
+				B282AECB19A9BDD100ED71C9 /* twitterbutton.png in Resources */,
 				14E5E4EC19A97661001E5A72 /* MittoBlue.png in Resources */,
+				B282AEC519A9BD2A00ED71C9 /* Mitto.png in Resources */,
 				14E5E4E719A973FB001E5A72 /* bicycle2x.png in Resources */,
 				14E5E4EA19A9747C001E5A72 /* apartment-2.png in Resources */,
 				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
 				14E5E4E819A973FB001E5A72 /* tesla.png in Resources */,
 				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
+				B282AEC919A9BDCB00ED71C9 /* fbbuttons.png in Resources */,
 				144D25E119A987800077C833 /* Opacity Bar.png in Resources */,
+				B282AEC719A9BD9400ED71C9 /* Login-1.png in Resources */,
 				14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */,
 				B282AEBF19A9B8B700ED71C9 /* LoginBackground.png in Resources */,
 			);
