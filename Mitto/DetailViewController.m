@@ -7,8 +7,10 @@
 //
 
 #import "DetailViewController.h"
+#import <MessageUI/MessageUI.h>
 
-@interface DetailViewController ()
+@interface DetailViewController () <MFMailComposeViewControllerDelegate>
+- (IBAction)contact:(id)sender;
 
 @end
 
@@ -35,7 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 -(BOOL)prefersStatusBarHidden{
-    return YES;
+    return NO;
 }
 
 /*
@@ -49,4 +51,42 @@
 }
 */
 
+- (IBAction)contact:(id)sender {
+    NSString *emailTitle = @"Mitto: Interested user";
+    // Email Content
+    NSString *messageBody = @"Hello, I am interested in your post.";
+    // To address
+    NSArray *toRecipents = [NSArray arrayWithObject:@"xxxxxxxxxx@gmail.com"];
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:NO];
+    [mc setToRecipients:toRecipents];
+    mc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:mc animated:YES completion:NULL];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

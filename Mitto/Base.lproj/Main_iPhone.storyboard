@@ -36,7 +36,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BWh-Q9-SOk"/>
-                                    <segue destination="mmi-m1-dop" kind="modal" id="WPd-8e-J9N"/>
+                                    <segue destination="mmi-m1-dop" kind="modal" modalTransitionStyle="crossDissolve" id="WPd-8e-J9N"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBV-Ks-LFe">
@@ -62,6 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dCh-Qh-w5S"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="textFieldOnme" destination="eBV-Ks-LFe" id="JeI-Lr-0HS"/>
                         <outlet property="textFieldtwo" destination="Xq8-XS-GEw" id="vH0-Fm-lGY"/>
@@ -78,7 +79,7 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="170" sectionHeaderHeight="22" sectionFooterHeight="22" id="H0F-ym-3vM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.10176179846938771" green="0.10176179846938771" blue="0.10176179846938771" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="170" id="Pg4-RK-N9B" customClass="Cell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="170"/>
@@ -108,7 +109,7 @@
                                     <outlet property="activityLoader" destination="1Ax-D7-pTM" id="oXi-S9-Yvg"/>
                                     <outlet property="imageView" destination="ktt-UF-A4e" id="Kp9-0u-wec"/>
                                     <outlet property="label" destination="sQU-eg-l8i" id="aqf-L8-rvI"/>
-                                    <segue destination="A9M-sv-ebp" kind="push" identifier="detail" id="7ku-Pp-VhZ"/>
+                                    <segue destination="A9M-sv-ebp" kind="push" identifier="detail" id="RMw-eE-aQP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -120,14 +121,14 @@
                     <navigationItem key="navigationItem" id="fgV-O6-XCu">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="N7t-jb-5c2">
-                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                            <rect key="frame" x="71" y="7" width="179" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <segments>
                                 <segment title="Feed"/>
                                 <segment title="Starred"/>
                             </segments>
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="P0z-SL-Qsc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="1887" y="-341"/>
         </scene>
-        <!--Detail View Controller - DETAIL-->
+        <!--Detail View Controller - More Info-->
         <scene sceneID="hii-06-3Gs">
             <objects>
                 <viewController storyboardIdentifier="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A9M-sv-ebp" customClass="DetailViewController" sceneMemberID="viewController">
@@ -162,40 +163,57 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="264"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP7-Os-OvZ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP7-Os-OvZ">
                                 <rect key="frame" x="0.0" y="329" width="320" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-rj-ga8">
-                                <rect key="frame" x="20" y="373" width="280" height="149"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-rj-ga8">
+                                <rect key="frame" x="20" y="388" width="280" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1017617985" green="0.1017617985" blue="0.1017617985" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIw-Ba-HsG">
-                                <rect key="frame" x="112" y="530" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIw-Ba-HsG">
+                                <rect key="frame" x="88" y="521" width="144" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Contact">
+                                <color key="backgroundColor" red="0.1017617985" green="0.1017617985" blue="0.1017617985" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="Contact Button.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="contact:" destination="A9M-sv-ebp" eventType="touchUpInside" id="iN2-xD-loM"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Details Line-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KcW-qs-O2L">
+                                <rect key="frame" x="9" y="375" width="300" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1017617985" green="0.1017617985" blue="0.1017617985" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="DETAIL" id="kJo-vp-oWd">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="evo-0D-sWO"/>
+                    <navigationItem key="navigationItem" title="More Info" id="kJo-vp-oWd">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="bjc-ck-PqO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JoN-Ub-Jbk">
+                                <rect key="frame" x="279" y="9" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Filled Star.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5i-Cp-fbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="-368"/>
+            <point key="canvasLocation" x="2289" y="-341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TNT-qm-3xc">
@@ -203,8 +221,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3k7-8x-gjc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="00p-8n-9Ob">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="00p-8n-9Ob">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -240,6 +258,9 @@
     </scenes>
     <resources>
         <image name="Background2x.png" width="1280" height="2272"/>
+        <image name="Contact Button.png" width="572" height="106"/>
+        <image name="Details Line-1.png" width="312" height="1"/>
+        <image name="Filled Star.png" width="100" height="102"/>
         <image name="tesla.png" width="1280" height="692"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

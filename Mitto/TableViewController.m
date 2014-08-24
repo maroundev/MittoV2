@@ -50,7 +50,7 @@
 {
     [super viewDidLoad];
     
-    [self.navigationController.navigationBar.topItem setTitle:@"Mitto"];
+    [self.navigationController.navigationBar.topItem setTitle:@"Back"];
     
     //initialise the refresh controller
     refreshControl = [[UIRefreshControl alloc] init];
@@ -196,7 +196,7 @@
     // Configure the cell...
     Transmitter *tran = [self.transmitters objectAtIndex:indexPath.row];
     cell.label.text = tran.name;
-    
+
     if ([cell.label.text isEqualToString:@"Shana"]) {
         UIImage *image = [UIImage imageNamed:@"apartment-2.png"];
         [cell.imageView setImage:image];

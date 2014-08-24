@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		141A9AEB19A98C4D00271DEB /* Background2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AEA19A98C4D00271DEB /* Background2x.png */; };
 		141A9AED19A98F2700271DEB /* Nav Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AEC19A98F2700271DEB /* Nav Bar.png */; };
+		141A9AEF19A9910300271DEB /* Feed White.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AEE19A9910300271DEB /* Feed White.png */; };
+		141A9AF119A9936500271DEB /* Filled Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AF019A9936500271DEB /* Filled Star.png */; };
+		141A9AF319A9966800271DEB /* Contact Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AF219A9966800271DEB /* Contact Button.png */; };
+		141A9AF519A9970E00271DEB /* Details Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AF419A9970E00271DEB /* Details Line.png */; };
+		141A9AF719A9991900271DEB /* Details Line-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AF619A9991900271DEB /* Details Line-1.png */; };
+		141A9AF919A99A4100271DEB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141A9AF819A99A4100271DEB /* MessageUI.framework */; };
 		144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25DE19A987450077C833 /* Opacity Bar 2.png */; };
 		144D25E119A987800077C833 /* Opacity Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25E019A987800077C833 /* Opacity Bar.png */; };
 		14E5E4E219A9738F001E5A72 /* job2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E5E4E119A9738F001E5A72 /* job2x.png */; };
@@ -64,6 +70,12 @@
 /* Begin PBXFileReference section */
 		141A9AEA19A98C4D00271DEB /* Background2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background2x.png; sourceTree = "<group>"; };
 		141A9AEC19A98F2700271DEB /* Nav Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav Bar.png"; sourceTree = "<group>"; };
+		141A9AEE19A9910300271DEB /* Feed White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed White.png"; sourceTree = "<group>"; };
+		141A9AF019A9936500271DEB /* Filled Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Filled Star.png"; sourceTree = "<group>"; };
+		141A9AF219A9966800271DEB /* Contact Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Button.png"; sourceTree = "<group>"; };
+		141A9AF419A9970E00271DEB /* Details Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Details Line.png"; sourceTree = "<group>"; };
+		141A9AF619A9991900271DEB /* Details Line-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Details Line-1.png"; sourceTree = "<group>"; };
+		141A9AF819A99A4100271DEB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		144D25DE19A987450077C833 /* Opacity Bar 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar 2.png"; sourceTree = "<group>"; };
 		144D25E019A987800077C833 /* Opacity Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar.png"; sourceTree = "<group>"; };
 		14E5E4E119A9738F001E5A72 /* job2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job2x.png; sourceTree = "<group>"; };
@@ -120,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141A9AF919A99A4100271DEB /* MessageUI.framework in Frameworks */,
 				14FBCCE319A9365A00332BEF /* Security.framework in Frameworks */,
 				14FBCCE119A9365400332BEF /* MapKit.framework in Frameworks */,
 				14FBCCDF19A9364F00332BEF /* libz.dylib in Frameworks */,
@@ -154,8 +167,13 @@
 		14E5E4D619A972D0001E5A72 /* pics4menu */ = {
 			isa = PBXGroup;
 			children = (
+				141A9AF619A9991900271DEB /* Details Line-1.png */,
+				141A9AF419A9970E00271DEB /* Details Line.png */,
+				141A9AF219A9966800271DEB /* Contact Button.png */,
+				141A9AF019A9936500271DEB /* Filled Star.png */,
 				141A9AEC19A98F2700271DEB /* Nav Bar.png */,
 				141A9AEA19A98C4D00271DEB /* Background2x.png */,
+				141A9AEE19A9910300271DEB /* Feed White.png */,
 				144D25DE19A987450077C833 /* Opacity Bar 2.png */,
 				144D25E019A987800077C833 /* Opacity Bar.png */,
 				14E5E4E919A9747C001E5A72 /* apartment-2.png */,
@@ -188,6 +206,7 @@
 		14FBCC8A19A92D6F00332BEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				141A9AF819A99A4100271DEB /* MessageUI.framework */,
 				14FBCCE219A9365A00332BEF /* Security.framework */,
 				14FBCCE019A9365400332BEF /* MapKit.framework */,
 				14FBCCDE19A9364F00332BEF /* libz.dylib */,
@@ -398,17 +417,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				14FBCCA219A92D6F00332BEF /* Main_iPad.storyboard in Resources */,
+				141A9AF719A9991900271DEB /* Details Line-1.png in Resources */,
+				141A9AF319A9966800271DEB /* Contact Button.png in Resources */,
 				14E5E4E219A9738F001E5A72 /* job2x.png in Resources */,
 				14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */,
 				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
+				141A9AF119A9936500271DEB /* Filled Star.png in Resources */,
 				141A9AED19A98F2700271DEB /* Nav Bar.png in Resources */,
 				144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */,
+				141A9AEF19A9910300271DEB /* Feed White.png in Resources */,
 				14E5E4EC19A97661001E5A72 /* MittoBlue.png in Resources */,
 				14E5E4E719A973FB001E5A72 /* bicycle2x.png in Resources */,
 				14E5E4EA19A9747C001E5A72 /* apartment-2.png in Resources */,
 				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
 				14E5E4E819A973FB001E5A72 /* tesla.png in Resources */,
 				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
+				141A9AF519A9970E00271DEB /* Details Line.png in Resources */,
 				141A9AEB19A98C4D00271DEB /* Background2x.png in Resources */,
 				144D25E119A987800077C833 /* Opacity Bar.png in Resources */,
 				14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */,
