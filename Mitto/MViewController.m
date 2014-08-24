@@ -28,6 +28,11 @@
     
     
 }
+// Enables background touch to return keyboards
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.textFieldOnme resignFirstResponder];
+    [self.textFieldtwo resignFirstResponder];
+}
 
 - (void)didReceiveMemoryWarning
 {

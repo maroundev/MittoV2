@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C361221C-FEBA-40A2-B6C5-7E8BFFF0FB5E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mitto</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E73B1009-13FE-42C7-A625-A64423732493</key>
+		<string>https://github.com/maroundev/MittoV2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mitto.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E73B1009-13FE-42C7-A625-A64423732493</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/maroundev/MittoV2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E73B1009-13FE-42C7-A625-A64423732493</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E73B1009-13FE-42C7-A625-A64423732493</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MittoV2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

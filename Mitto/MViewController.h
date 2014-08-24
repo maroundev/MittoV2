@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textFieldOnme;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldtwo;
 
 @end

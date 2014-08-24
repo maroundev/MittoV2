@@ -17,11 +17,16 @@
 #import <FYX/FYXTransmitter.h>
 #import <FYX/FYXVisit.h>
 
-@interface TableViewController () <UITableViewDataSource, UITableViewDelegate, FYXVisitDelegate>
+@interface TableViewController () <UITableViewDataSource, UITableViewDelegate, FYXVisitDelegate, UIScrollViewDelegate>
+{
+    UIRefreshControl *refreshControl;
+}
 
 @property NSMutableArray *transmitters;
 @property FYXVisitManager *visitManager;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)add:(id)sender;
 
 @end
 
@@ -40,8 +45,19 @@
 {
     [super viewDidLoad];
     
-    [self.navigationController.navigationBar.topItem setTitle:@"Mitto"];
+    [self.navigationController.navigationBar.topItem setTitle:@"Back"];
     
+    //initialise the refresh controller
+    refreshControl = [[UIRefreshControl alloc] init];
+    
+    //set the title for pull request
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"Release to update..."];
+    
+    //call he refresh function
+    [refreshControl addTarget:self action:@selector(refreshMyTableView)
+             forControlEvents:UIControlEventValueChanged];
+    
+    self.refreshControl = refreshControl;
     self.transmitters = [NSMutableArray new];
     
     self.visitManager = [[FYXVisitManager alloc] init];
@@ -60,25 +76,19 @@
 
 - (void)didArrive:(FYXVisit *)visit
 {
-    NSLog(@"############## didArrive: %@", visit);
+  //  NSLog(@"############## didArrive: %@", visit);
 }
 
 - (void)didDepart:(FYXVisit *)visit
 {
-    NSLog(@"############## didDepart: %@", visit);
-    
-    Transmitter *transmitter = [[self.transmitters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == %@", visit.transmitter.identifier]] firstObject];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.transmitters indexOfObject:transmitter] inSection:0];
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    if ([cell isKindOfClass:[cell class]])
-    {
-        [self grayOutSightingsCell:((Cell*)cell)];
-    }
+   // NSLog(@"############## didDepart: %@", visit);
+
+   
 }
 
 - (void)receivedSighting:(FYXVisit *)visit updateTime:(NSDate *)updateTime RSSI:(NSNumber *)RSSI
 {
-    NSLog(@"############## receivedSighting: %@", visit);
+   // NSLog(@"############## receivedSighting: %@", visit);
     
     Transmitter *transmitter = [[self.transmitters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == %@", visit.transmitter.identifier]] firstObject];
     if (transmitter == nil)
@@ -115,41 +125,6 @@
     }
 }
 
-- (float)barWidthForRSSI:(NSNumber *)rssi
-{
-    NSInteger barMaxValue = [[NSUserDefaults standardUserDefaults] integerForKey:@"rssi_bar_max_value"];
-    NSInteger barMinValue = [[NSUserDefaults standardUserDefaults] integerForKey:@"rssi_bar_min_value"];
-    
-    float rssiValue = [rssi floatValue];
-    float barWidth;
-    if (rssiValue >= barMaxValue)
-    {
-        barWidth = 270.0f;
-    }
-    else if (rssiValue <= barMinValue)
-    {
-        barWidth = 5.0f;
-    } else
-    {
-        NSInteger barRange = barMaxValue - barMinValue;
-        float percentage = (barMaxValue - rssiValue) / (float)barRange;
-        barWidth = (1.0f - percentage) * 270.0f;
-    }
-    return barWidth;
-}
-
-- (void)grayOutSightingsCell:(Cell *)sightingsCell
-{
-    if (sightingsCell)
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            sightingsCell.contentView.alpha = 0.3f;
-            CGRect oldFrame = sightingsCell.imageView.frame;
-            sightingsCell.imageView.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, 0, oldFrame.size.height);
-            sightingsCell.isGrayedOut = YES;
-        });
-    }
-}
 
 
 
@@ -216,44 +191,74 @@
     // Configure the cell...
     Transmitter *tran = [self.transmitters objectAtIndex:indexPath.row];
     cell.label.text = tran.name;
+
     if ([cell.label.text isEqualToString:@"Shana"]) {
-        //[self downloadImage:cell :@"http://rack.1.mshcdn.com/media/ZgkyMDEzLzExLzEyLzc1L2FpcmJuYi45MGI0OC5qcGcKcAl0aHVtYgkxMjAweDYyNyMKZQlqcGc/549d0831/671/airbnb.jpg"];
-        UIImage *image = [UIImage imageNamed:@"cool-office-space.jpg"];
+        UIImage *image = [UIImage imageNamed:@"apartment-2.png"];
+        [cell.imageView setImage:image];
+    } else if ([cell.label.text isEqualToString:@"Maroun"]){
+        UIImage *image = [UIImage imageNamed:@"job2x.png"];
+        [cell.imageView setImage:image];
+    } else if ([cell.label.text isEqualToString:@"Quintin"]){
+        UIImage *image = [UIImage imageNamed:@"bicycle2x.png"];
+        [cell.imageView setImage:image];
+    }  else if ([cell.label.text isEqualToString:@"Marlena"]){
+        UIImage *image = [UIImage imageNamed:@"tesla.png"];
         [cell.imageView setImage:image];
     }
+
+    
     return cell;
 }
--(void)downloadImage :(Cell *)cell :(NSString *)urlToPass {
-    //Download images in background so it doesn't lag.
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        NSString *imageUrl = [NSString stringWithFormat:@"%@",urlToPass];
-        //http://%@/favicon.ico
-        NSURL  *url = [NSURL URLWithString:imageUrl];
-        NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-        [cell.activityLoader startAnimating];
-        
-        //set your image on main thread.
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (data) {
-                [cell.imageView setImage:[UIImage imageWithData:data]];
-            }else{
-                
-                [cell.imageView setImage:[UIImage imageNamed:@"emptyspace.png"]];
-                
-            }
-            [cell.activityLoader stopAnimating];
-            [cell.activityLoader setHidesWhenStopped:YES];
-            
-        });
-        
-    });
-}
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
     detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    Transmitter *tran = self.transmitters[indexPath.row];
+    if ([tran.name isEqual:@"Maroun"]) {
+        detail.rowPicked = 1;
+    } else if ([tran.name isEqual:@"Quintin"]){
+        detail.rowPicked = 2;
+    } else if ([tran.name isEqual:@"Shana"]){
+        detail.rowPicked = 3;
+    } else if ([tran.name isEqual:@"Marlena"]){
+        detail.rowPicked = 4;
+    }
+
     [self presentViewController:detail animated:YES completion:nil];
+    
+    //NSLog(@"INDEXPATH @@@@@@@@@@@@@@@@@@@@@@:::::> %ld", (long)indexPath.row);
+
 }
 
+/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"detail"])
+    {
+        DetailViewController *detail = [segue destinationViewController];
+        detail.rowPicked = rowSelected;
+    }
+}
+*/
+
+
+
+-(void)refreshMyTableView{
+    
+    //set the title while refreshing
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"Refreshing the TableView"];
+    //set the date and time of refreshing
+    NSDateFormatter *formattedDate = [[NSDateFormatter alloc]init];
+    [formattedDate setDateFormat:@"MMM d, h:mm a"];
+    NSString *lastupdated = [NSString stringWithFormat:@"Last Updated on %@",[formattedDate stringFromDate:[NSDate date]]];
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:lastupdated];
+    [self.transmitters removeAllObjects];
+    [self.tableView reloadData];
+    //end the refreshing
+    [refreshControl endRefreshing];
+    
+}
+
+- (IBAction)add:(id)sender {
+}
 @end
