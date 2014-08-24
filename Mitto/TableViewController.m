@@ -28,11 +28,6 @@
 
 - (IBAction)add:(id)sender;
 
-@property int one;
-@property int two;
-@property int three;
-@property int four;
-
 @end
 
 @implementation TableViewController
@@ -81,19 +76,19 @@
 
 - (void)didArrive:(FYXVisit *)visit
 {
-    NSLog(@"############## didArrive: %@", visit);
+  //  NSLog(@"############## didArrive: %@", visit);
 }
 
 - (void)didDepart:(FYXVisit *)visit
 {
-    NSLog(@"############## didDepart: %@", visit);
+   // NSLog(@"############## didDepart: %@", visit);
 
    
 }
 
 - (void)receivedSighting:(FYXVisit *)visit updateTime:(NSDate *)updateTime RSSI:(NSNumber *)RSSI
 {
-    NSLog(@"############## receivedSighting: %@", visit);
+   // NSLog(@"############## receivedSighting: %@", visit);
     
     Transmitter *transmitter = [[self.transmitters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == %@", visit.transmitter.identifier]] firstObject];
     if (transmitter == nil)
@@ -215,19 +210,36 @@
     return cell;
 }
 
-/*-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-   // DetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
-    //detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    //[self presentViewController:detail animated:YES completion:nil];
-}*/
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
+    detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    Transmitter *tran = self.transmitters[indexPath.row];
+    if ([tran.name isEqual:@"Maroun"]) {
+        detail.rowPicked = 1;
+    } else if ([tran.name isEqual:@"Quintin"]){
+        detail.rowPicked = 2;
+    } else if ([tran.name isEqual:@"Shana"]){
+        detail.rowPicked = 3;
+    } else if ([tran.name isEqual:@"Marlena"]){
+        detail.rowPicked = 4;
+    }
+
+    [self presentViewController:detail animated:YES completion:nil];
+    
+    //NSLog(@"INDEXPATH @@@@@@@@@@@@@@@@@@@@@@:::::> %ld", (long)indexPath.row);
+
+}
+
+/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:@"detail"])
     {
         DetailViewController *detail = [segue destinationViewController];
+        detail.rowPicked = rowSelected;
     }
 }
+*/
 
 
 

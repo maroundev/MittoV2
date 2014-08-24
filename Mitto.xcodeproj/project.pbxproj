@@ -15,6 +15,10 @@
 		141A9AF519A9970E00271DEB /* Details Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AF419A9970E00271DEB /* Details Line.png */; };
 		141A9AF719A9991900271DEB /* Details Line-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AF619A9991900271DEB /* Details Line-1.png */; };
 		141A9AF919A99A4100271DEB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141A9AF819A99A4100271DEB /* MessageUI.framework */; };
+		141A9AFF19A9ADF100271DEB /* office.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AFB19A9ADF100271DEB /* office.jpg */; };
+		141A9B0019A9ADF100271DEB /* bed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AFC19A9ADF100271DEB /* bed.jpg */; };
+		141A9B0119A9ADF100271DEB /* bike.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AFD19A9ADF100271DEB /* bike.png */; };
+		141A9B0219A9ADF100271DEB /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AFE19A9ADF100271DEB /* car.jpg */; };
 		144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25DE19A987450077C833 /* Opacity Bar 2.png */; };
 		144D25E119A987800077C833 /* Opacity Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25E019A987800077C833 /* Opacity Bar.png */; };
 		14E5E4E219A9738F001E5A72 /* job2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E5E4E119A9738F001E5A72 /* job2x.png */; };
@@ -76,6 +80,10 @@
 		141A9AF419A9970E00271DEB /* Details Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Details Line.png"; sourceTree = "<group>"; };
 		141A9AF619A9991900271DEB /* Details Line-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Details Line-1.png"; sourceTree = "<group>"; };
 		141A9AF819A99A4100271DEB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		141A9AFB19A9ADF100271DEB /* office.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = office.jpg; sourceTree = "<group>"; };
+		141A9AFC19A9ADF100271DEB /* bed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bed.jpg; sourceTree = "<group>"; };
+		141A9AFD19A9ADF100271DEB /* bike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike.png; sourceTree = "<group>"; };
+		141A9AFE19A9ADF100271DEB /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 		144D25DE19A987450077C833 /* Opacity Bar 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar 2.png"; sourceTree = "<group>"; };
 		144D25E019A987800077C833 /* Opacity Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar.png"; sourceTree = "<group>"; };
 		14E5E4E119A9738F001E5A72 /* job2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job2x.png; sourceTree = "<group>"; };
@@ -164,6 +172,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141A9AFA19A9ADF100271DEB /* InfoPic */ = {
+			isa = PBXGroup;
+			children = (
+				141A9AFB19A9ADF100271DEB /* office.jpg */,
+				141A9AFC19A9ADF100271DEB /* bed.jpg */,
+				141A9AFD19A9ADF100271DEB /* bike.png */,
+				141A9AFE19A9ADF100271DEB /* car.jpg */,
+			);
+			path = InfoPic;
+			sourceTree = "<group>";
+		};
 		14E5E4D619A972D0001E5A72 /* pics4menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +244,7 @@
 		14FBCC9119A92D6F00332BEF /* Mitto */ = {
 			isa = PBXGroup;
 			children = (
+				141A9AFA19A9ADF100271DEB /* InfoPic */,
 				14E5E4D619A972D0001E5A72 /* pics4menu */,
 				14FBCC9A19A92D6F00332BEF /* MAppDelegate.h */,
 				14FBCC9B19A92D6F00332BEF /* MAppDelegate.m */,
@@ -418,20 +438,24 @@
 			files = (
 				14FBCCA219A92D6F00332BEF /* Main_iPad.storyboard in Resources */,
 				141A9AF719A9991900271DEB /* Details Line-1.png in Resources */,
+				141A9AFF19A9ADF100271DEB /* office.jpg in Resources */,
 				141A9AF319A9966800271DEB /* Contact Button.png in Resources */,
 				14E5E4E219A9738F001E5A72 /* job2x.png in Resources */,
 				14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */,
 				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
 				141A9AF119A9936500271DEB /* Filled Star.png in Resources */,
+				141A9B0119A9ADF100271DEB /* bike.png in Resources */,
 				141A9AED19A98F2700271DEB /* Nav Bar.png in Resources */,
 				144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */,
 				141A9AEF19A9910300271DEB /* Feed White.png in Resources */,
+				141A9B0219A9ADF100271DEB /* car.jpg in Resources */,
 				14E5E4EC19A97661001E5A72 /* MittoBlue.png in Resources */,
 				14E5E4E719A973FB001E5A72 /* bicycle2x.png in Resources */,
 				14E5E4EA19A9747C001E5A72 /* apartment-2.png in Resources */,
 				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
 				14E5E4E819A973FB001E5A72 /* tesla.png in Resources */,
 				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
+				141A9B0019A9ADF100271DEB /* bed.jpg in Resources */,
 				141A9AF519A9970E00271DEB /* Details Line.png in Resources */,
 				141A9AEB19A98C4D00271DEB /* Background2x.png in Resources */,
 				144D25E119A987800077C833 /* Opacity Bar.png in Resources */,
