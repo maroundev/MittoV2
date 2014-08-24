@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14F16EF119A964D4007E801C /* cool-office-space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14F16EF019A964D4007E801C /* cool-office-space.jpg */; };
+		14FBCC8C19A92D6F00332BEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCC8B19A92D6F00332BEF /* Foundation.framework */; };
+		14FBCC8E19A92D6F00332BEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCC8D19A92D6F00332BEF /* CoreGraphics.framework */; };
+		14FBCC9019A92D6F00332BEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCC8F19A92D6F00332BEF /* UIKit.framework */; };
+		14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCC9419A92D6F00332BEF /* InfoPlist.strings */; };
+		14FBCC9819A92D6F00332BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCC9719A92D6F00332BEF /* main.m */; };
+		14FBCC9C19A92D6F00332BEF /* MAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCC9B19A92D6F00332BEF /* MAppDelegate.m */; };
+		14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCC9D19A92D6F00332BEF /* Main_iPhone.storyboard */; };
+		14FBCCA219A92D6F00332BEF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCA019A92D6F00332BEF /* Main_iPad.storyboard */; };
+		14FBCCA519A92D6F00332BEF /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCA419A92D6F00332BEF /* MViewController.m */; };
+		14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCA619A92D6F00332BEF /* Images.xcassets */; };
+		14FBCCAE19A92D6F00332BEF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCAD19A92D6F00332BEF /* XCTest.framework */; };
+		14FBCCAF19A92D6F00332BEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCC8B19A92D6F00332BEF /* Foundation.framework */; };
+		14FBCCB019A92D6F00332BEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCC8F19A92D6F00332BEF /* UIKit.framework */; };
+		14FBCCB819A92D6F00332BEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCB619A92D6F00332BEF /* InfoPlist.strings */; };
+		14FBCCBA19A92D6F00332BEF /* MittoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCB919A92D6F00332BEF /* MittoTests.m */; };
+		14FBCCD119A935E800332BEF /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCC519A935E800332BEF /* Common.framework */; };
+		14FBCCD219A935E800332BEF /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCC719A935E800332BEF /* ContextCore.framework */; };
+		14FBCCD319A935E800332BEF /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCC919A935E800332BEF /* ContextLocation.framework */; };
+		14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCCB19A935E800332BEF /* DataModels.bundle */; };
+		14FBCCD519A935E800332BEF /* ContextProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCCD19A935E800332BEF /* ContextProfiling.framework */; };
+		14FBCCD619A935E800332BEF /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCCE19A935E800332BEF /* FYX.framework */; };
+		14FBCCD719A935E800332BEF /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCD019A935E800332BEF /* NetworkServices.framework */; };
+		14FBCCD919A9363800332BEF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCD819A9363800332BEF /* CoreBluetooth.framework */; };
+		14FBCCDB19A9363F00332BEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCDA19A9363F00332BEF /* CoreLocation.framework */; };
+		14FBCCDD19A9364500332BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCDC19A9364500332BEF /* CoreData.framework */; };
+		14FBCCDF19A9364F00332BEF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCDE19A9364F00332BEF /* libz.dylib */; };
+		14FBCCE119A9365400332BEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCE019A9365400332BEF /* MapKit.framework */; };
+		14FBCCE319A9365A00332BEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FBCCE219A9365A00332BEF /* Security.framework */; };
+		14FBCCE619A936BE00332BEF /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCE519A936BE00332BEF /* TableViewController.m */; };
+		14FBCCEF19A939E200332BEF /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCEE19A939E200332BEF /* Cell.m */; };
+		14FBCCF219A93A8B00332BEF /* Transmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF119A93A8B00332BEF /* Transmitter.m */; };
+		14FBCCF619A9404200332BEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCF519A9404200332BEF /* Settings.bundle */; };
+		14FBCCF919A9435A00332BEF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF819A9435A00332BEF /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14FBCCB119A92D6F00332BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14FBCC8019A92D6F00332BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14FBCC8719A92D6F00332BEF;
+			remoteInfo = Mitto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14F16EF019A964D4007E801C /* cool-office-space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cool-office-space.jpg"; sourceTree = "<group>"; };
+		14FBCC8819A92D6F00332BEF /* Mitto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mitto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14FBCC8B19A92D6F00332BEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14FBCC8D19A92D6F00332BEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14FBCC8F19A92D6F00332BEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14FBCC9319A92D6F00332BEF /* Mitto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mitto-Info.plist"; sourceTree = "<group>"; };
+		14FBCC9519A92D6F00332BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14FBCC9719A92D6F00332BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14FBCC9919A92D6F00332BEF /* Mitto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mitto-Prefix.pch"; sourceTree = "<group>"; };
+		14FBCC9A19A92D6F00332BEF /* MAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAppDelegate.h; sourceTree = "<group>"; };
+		14FBCC9B19A92D6F00332BEF /* MAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAppDelegate.m; sourceTree = "<group>"; };
+		14FBCC9E19A92D6F00332BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		14FBCCA119A92D6F00332BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		14FBCCA319A92D6F00332BEF /* MViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
+		14FBCCA419A92D6F00332BEF /* MViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		14FBCCA619A92D6F00332BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14FBCCAC19A92D6F00332BEF /* MittoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MittoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14FBCCAD19A92D6F00332BEF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		14FBCCB519A92D6F00332BEF /* MittoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MittoTests-Info.plist"; sourceTree = "<group>"; };
+		14FBCCB719A92D6F00332BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14FBCCB919A92D6F00332BEF /* MittoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MittoTests.m; sourceTree = "<group>"; };
+		14FBCCC519A935E800332BEF /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		14FBCCC719A935E800332BEF /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		14FBCCC919A935E800332BEF /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		14FBCCCB19A935E800332BEF /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		14FBCCCD19A935E800332BEF /* ContextProfiling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextProfiling.framework; sourceTree = "<group>"; };
+		14FBCCCE19A935E800332BEF /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		14FBCCD019A935E800332BEF /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		14FBCCD819A9363800332BEF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		14FBCCDA19A9363F00332BEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		14FBCCDC19A9364500332BEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		14FBCCDE19A9364F00332BEF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		14FBCCE019A9365400332BEF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		14FBCCE219A9365A00332BEF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		14FBCCE419A936BE00332BEF /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		14FBCCE519A936BE00332BEF /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		14FBCCED19A939E200332BEF /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		14FBCCEE19A939E200332BEF /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		14FBCCF019A93A8B00332BEF /* Transmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transmitter.h; sourceTree = "<group>"; };
+		14FBCCF119A93A8B00332BEF /* Transmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transmitter.m; sourceTree = "<group>"; };
+		14FBCCF519A9404200332BEF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		14FBCCF719A9435A00332BEF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		14FBCCF819A9435A00332BEF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14FBCC8519A92D6F00332BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBCCE319A9365A00332BEF /* Security.framework in Frameworks */,
+				14FBCCE119A9365400332BEF /* MapKit.framework in Frameworks */,
+				14FBCCDF19A9364F00332BEF /* libz.dylib in Frameworks */,
+				14FBCCDD19A9364500332BEF /* CoreData.framework in Frameworks */,
+				14FBCCDB19A9363F00332BEF /* CoreLocation.framework in Frameworks */,
+				14FBCCD919A9363800332BEF /* CoreBluetooth.framework in Frameworks */,
+				14FBCCD619A935E800332BEF /* FYX.framework in Frameworks */,
+				14FBCCD719A935E800332BEF /* NetworkServices.framework in Frameworks */,
+				14FBCC8E19A92D6F00332BEF /* CoreGraphics.framework in Frameworks */,
+				14FBCCD119A935E800332BEF /* Common.framework in Frameworks */,
+				14FBCCD519A935E800332BEF /* ContextProfiling.framework in Frameworks */,
+				14FBCC9019A92D6F00332BEF /* UIKit.framework in Frameworks */,
+				14FBCCD319A935E800332BEF /* ContextLocation.framework in Frameworks */,
+				14FBCCD219A935E800332BEF /* ContextCore.framework in Frameworks */,
+				14FBCC8C19A92D6F00332BEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FBCCA919A92D6F00332BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBCCAE19A92D6F00332BEF /* XCTest.framework in Frameworks */,
+				14FBCCB019A92D6F00332BEF /* UIKit.framework in Frameworks */,
+				14FBCCAF19A92D6F00332BEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14FBCC7F19A92D6F00332BEF = {
+			isa = PBXGroup;
+			children = (
+				14FBCC9119A92D6F00332BEF /* Mitto */,
+				14FBCCB319A92D6F00332BEF /* MittoTests */,
+				14FBCC8A19A92D6F00332BEF /* Frameworks */,
+				14FBCC8919A92D6F00332BEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14FBCC8919A92D6F00332BEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCC8819A92D6F00332BEF /* Mitto.app */,
+				14FBCCAC19A92D6F00332BEF /* MittoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14FBCC8A19A92D6F00332BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCE219A9365A00332BEF /* Security.framework */,
+				14FBCCE019A9365400332BEF /* MapKit.framework */,
+				14FBCCDE19A9364F00332BEF /* libz.dylib */,
+				14FBCCDC19A9364500332BEF /* CoreData.framework */,
+				14FBCCDA19A9363F00332BEF /* CoreLocation.framework */,
+				14FBCCD819A9363800332BEF /* CoreBluetooth.framework */,
+				14FBCCC319A935E800332BEF /* Frameworks */,
+				14FBCC8B19A92D6F00332BEF /* Foundation.framework */,
+				14FBCC8D19A92D6F00332BEF /* CoreGraphics.framework */,
+				14FBCC8F19A92D6F00332BEF /* UIKit.framework */,
+				14FBCCAD19A92D6F00332BEF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14FBCC9119A92D6F00332BEF /* Mitto */ = {
+			isa = PBXGroup;
+			children = (
+				14F16EF019A964D4007E801C /* cool-office-space.jpg */,
+				14FBCC9A19A92D6F00332BEF /* MAppDelegate.h */,
+				14FBCC9B19A92D6F00332BEF /* MAppDelegate.m */,
+				14FBCC9D19A92D6F00332BEF /* Main_iPhone.storyboard */,
+				14FBCCE419A936BE00332BEF /* TableViewController.h */,
+				14FBCCE519A936BE00332BEF /* TableViewController.m */,
+				14FBCCF719A9435A00332BEF /* DetailViewController.h */,
+				14FBCCF819A9435A00332BEF /* DetailViewController.m */,
+				14FBCCED19A939E200332BEF /* Cell.h */,
+				14FBCCEE19A939E200332BEF /* Cell.m */,
+				14FBCCA019A92D6F00332BEF /* Main_iPad.storyboard */,
+				14FBCCA319A92D6F00332BEF /* MViewController.h */,
+				14FBCCA419A92D6F00332BEF /* MViewController.m */,
+				14FBCCF019A93A8B00332BEF /* Transmitter.h */,
+				14FBCCF119A93A8B00332BEF /* Transmitter.m */,
+				14FBCCA619A92D6F00332BEF /* Images.xcassets */,
+				14FBCC9219A92D6F00332BEF /* Supporting Files */,
+			);
+			path = Mitto;
+			sourceTree = "<group>";
+		};
+		14FBCC9219A92D6F00332BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCC9319A92D6F00332BEF /* Mitto-Info.plist */,
+				14FBCC9419A92D6F00332BEF /* InfoPlist.strings */,
+				14FBCC9719A92D6F00332BEF /* main.m */,
+				14FBCC9919A92D6F00332BEF /* Mitto-Prefix.pch */,
+				14FBCCF519A9404200332BEF /* Settings.bundle */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14FBCCB319A92D6F00332BEF /* MittoTests */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCB919A92D6F00332BEF /* MittoTests.m */,
+				14FBCCB419A92D6F00332BEF /* Supporting Files */,
+			);
+			path = MittoTests;
+			sourceTree = "<group>";
+		};
+		14FBCCB419A92D6F00332BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCB519A92D6F00332BEF /* MittoTests-Info.plist */,
+				14FBCCB619A92D6F00332BEF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14FBCCC319A935E800332BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCC419A935E800332BEF /* Common.embeddedframework */,
+				14FBCCC619A935E800332BEF /* ContextCore.embeddedframework */,
+				14FBCCC819A935E800332BEF /* ContextLocation.embeddedframework */,
+				14FBCCCC19A935E800332BEF /* ContextProfiling.embeddedframework */,
+				14FBCCCE19A935E800332BEF /* FYX.framework */,
+				14FBCCCF19A935E800332BEF /* NetworkServices.embeddedframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		14FBCCC419A935E800332BEF /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCC519A935E800332BEF /* Common.framework */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		14FBCCC619A935E800332BEF /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCC719A935E800332BEF /* ContextCore.framework */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		14FBCCC819A935E800332BEF /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCC919A935E800332BEF /* ContextLocation.framework */,
+				14FBCCCA19A935E800332BEF /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		14FBCCCA19A935E800332BEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCCB19A935E800332BEF /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14FBCCCC19A935E800332BEF /* ContextProfiling.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCCD19A935E800332BEF /* ContextProfiling.framework */,
+			);
+			path = ContextProfiling.embeddedframework;
+			sourceTree = "<group>";
+		};
+		14FBCCCF19A935E800332BEF /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				14FBCCD019A935E800332BEF /* NetworkServices.framework */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14FBCC8719A92D6F00332BEF /* Mitto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14FBCCBD19A92D7000332BEF /* Build configuration list for PBXNativeTarget "Mitto" */;
+			buildPhases = (
+				14FBCC8419A92D6F00332BEF /* Sources */,
+				14FBCC8519A92D6F00332BEF /* Frameworks */,
+				14FBCC8619A92D6F00332BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mitto;
+			productName = Mitto;
+			productReference = 14FBCC8819A92D6F00332BEF /* Mitto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14FBCCAB19A92D6F00332BEF /* MittoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14FBCCC019A92D7000332BEF /* Build configuration list for PBXNativeTarget "MittoTests" */;
+			buildPhases = (
+				14FBCCA819A92D6F00332BEF /* Sources */,
+				14FBCCA919A92D6F00332BEF /* Frameworks */,
+				14FBCCAA19A92D6F00332BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14FBCCB219A92D6F00332BEF /* PBXTargetDependency */,
+			);
+			name = MittoTests;
+			productName = MittoTests;
+			productReference = 14FBCCAC19A92D6F00332BEF /* MittoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14FBCC8019A92D6F00332BEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = M;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MAR;
+				TargetAttributes = {
+					14FBCCAB19A92D6F00332BEF = {
+						TestTargetID = 14FBCC8719A92D6F00332BEF;
+					};
+				};
+			};
+			buildConfigurationList = 14FBCC8319A92D6F00332BEF /* Build configuration list for PBXProject "Mitto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14FBCC7F19A92D6F00332BEF;
+			productRefGroup = 14FBCC8919A92D6F00332BEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14FBCC8719A92D6F00332BEF /* Mitto */,
+				14FBCCAB19A92D6F00332BEF /* MittoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14FBCC8619A92D6F00332BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBCCA219A92D6F00332BEF /* Main_iPad.storyboard in Resources */,
+				14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */,
+				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
+				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
+				14F16EF119A964D4007E801C /* cool-office-space.jpg in Resources */,
+				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
+				14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FBCCAA19A92D6F00332BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBCCB819A92D6F00332BEF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14FBCC8419A92D6F00332BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBCC9C19A92D6F00332BEF /* MAppDelegate.m in Sources */,
+				14FBCC9819A92D6F00332BEF /* main.m in Sources */,
+				14FBCCA519A92D6F00332BEF /* MViewController.m in Sources */,
+				14FBCCF219A93A8B00332BEF /* Transmitter.m in Sources */,
+				14FBCCE619A936BE00332BEF /* TableViewController.m in Sources */,
+				14FBCCEF19A939E200332BEF /* Cell.m in Sources */,
+				14FBCCF919A9435A00332BEF /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FBCCA819A92D6F00332BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBCCBA19A92D6F00332BEF /* MittoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14FBCCB219A92D6F00332BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14FBCC8719A92D6F00332BEF /* Mitto */;
+			targetProxy = 14FBCCB119A92D6F00332BEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14FBCC9419A92D6F00332BEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14FBCC9519A92D6F00332BEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14FBCC9D19A92D6F00332BEF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14FBCC9E19A92D6F00332BEF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		14FBCCA019A92D6F00332BEF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14FBCCA119A92D6F00332BEF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		14FBCCB619A92D6F00332BEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14FBCCB719A92D6F00332BEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14FBCCBB19A92D7000332BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14FBCCBC19A92D7000332BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14FBCCBE19A92D7000332BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Common.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks/ContextProfiling.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/NetworkServices.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mitto/Mitto-Prefix.pch";
+				INFOPLIST_FILE = "Mitto/Mitto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14FBCCBF19A92D7000332BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Common.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks/ContextProfiling.embeddedframework",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/NetworkServices.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mitto/Mitto-Prefix.pch";
+				INFOPLIST_FILE = "Mitto/Mitto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14FBCCC119A92D7000332BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mitto.app/Mitto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mitto/Mitto-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MittoTests/MittoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		14FBCCC219A92D7000332BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mitto.app/Mitto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mitto/Mitto-Prefix.pch";
+				INFOPLIST_FILE = "MittoTests/MittoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14FBCC8319A92D6F00332BEF /* Build configuration list for PBXProject "Mitto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14FBCCBB19A92D7000332BEF /* Debug */,
+				14FBCCBC19A92D7000332BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14FBCCBD19A92D7000332BEF /* Build configuration list for PBXNativeTarget "Mitto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14FBCCBE19A92D7000332BEF /* Debug */,
+				14FBCCBF19A92D7000332BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14FBCCC019A92D7000332BEF /* Build configuration list for PBXNativeTarget "MittoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14FBCCC119A92D7000332BEF /* Debug */,
+				14FBCCC219A92D7000332BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14FBCC8019A92D6F00332BEF /* Project object */;
+}
