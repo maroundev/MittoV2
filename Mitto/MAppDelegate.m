@@ -14,17 +14,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"MittoBlue.png"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Opacity Bar.png"] forBarMetrics:UIBarMetricsDefault];
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
     shadow.shadowOffset = CGSizeMake(0, 1);
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:19.0/255.0 green:46.0/255.0 blue:64.0/255.0 alpha:1.0]];
+   // [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:19.0/255.0 green:46.0/255.0 blue:64.0/255.0 alpha:1.0]];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
                                                            shadow, NSShadowAttributeName,
                                                            [UIFont fontWithName:@"Century Gothic" size:21.0], NSFontAttributeName, nil]];
-    // use this for highlighted color
-    [[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:(54/255.0) green:(150/255.0) blue:(136/255.0) alpha:(1.0)]];
+
+    
     
     [self registerInitialValuesForUserDefaults];
     

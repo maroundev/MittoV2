@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25DE19A987450077C833 /* Opacity Bar 2.png */; };
+		144D25E119A987800077C833 /* Opacity Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25E019A987800077C833 /* Opacity Bar.png */; };
 		14E5E4E219A9738F001E5A72 /* job2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E5E4E119A9738F001E5A72 /* job2x.png */; };
 		14E5E4E719A973FB001E5A72 /* bicycle2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E5E4E419A973FB001E5A72 /* bicycle2x.png */; };
 		14E5E4E819A973FB001E5A72 /* tesla.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E5E4E519A973FB001E5A72 /* tesla.png */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144D25DE19A987450077C833 /* Opacity Bar 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar 2.png"; sourceTree = "<group>"; };
+		144D25E019A987800077C833 /* Opacity Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar.png"; sourceTree = "<group>"; };
 		14E5E4E119A9738F001E5A72 /* job2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job2x.png; sourceTree = "<group>"; };
 		14E5E4E419A973FB001E5A72 /* bicycle2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bicycle2x.png; sourceTree = "<group>"; };
 		14E5E4E519A973FB001E5A72 /* tesla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesla.png; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 		14E5E4D619A972D0001E5A72 /* pics4menu */ = {
 			isa = PBXGroup;
 			children = (
+				144D25DE19A987450077C833 /* Opacity Bar 2.png */,
+				144D25E019A987800077C833 /* Opacity Bar.png */,
 				14E5E4E919A9747C001E5A72 /* apartment-2.png */,
 				14E5E4E419A973FB001E5A72 /* bicycle2x.png */,
 				14E5E4E519A973FB001E5A72 /* tesla.png */,
@@ -389,12 +395,14 @@
 				14E5E4E219A9738F001E5A72 /* job2x.png in Resources */,
 				14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */,
 				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
+				144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */,
 				14E5E4EC19A97661001E5A72 /* MittoBlue.png in Resources */,
 				14E5E4E719A973FB001E5A72 /* bicycle2x.png in Resources */,
 				14E5E4EA19A9747C001E5A72 /* apartment-2.png in Resources */,
 				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
 				14E5E4E819A973FB001E5A72 /* tesla.png in Resources */,
 				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
+				144D25E119A987800077C833 /* Opacity Bar.png in Resources */,
 				14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
