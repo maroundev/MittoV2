@@ -47,11 +47,7 @@
         [UIView animateWithDuration:0.3f animations:^{
             [self.mainView setFrame:CGRectMake(uiFrame2.origin.x-100, uiFrame2.origin.y, uiFrame2.size.width, uiFrame2.size.height)];
         }];
-
     }
-    
-    
-   
 }
 
 - (void)viewDidLoad
