@@ -17,11 +17,21 @@
 #import <FYX/FYXTransmitter.h>
 #import <FYX/FYXVisit.h>
 
-@interface TableViewController () <UITableViewDataSource, UITableViewDelegate, FYXVisitDelegate>
+@interface TableViewController () <UITableViewDataSource, UITableViewDelegate, FYXVisitDelegate, UIScrollViewDelegate>
+{
+    UIRefreshControl *refreshControl;
+}
 
 @property NSMutableArray *transmitters;
 @property FYXVisitManager *visitManager;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)add:(id)sender;
+
+@property int one;
+@property int two;
+@property int three;
+@property int four;
 
 @end
 
@@ -42,6 +52,17 @@
     
     [self.navigationController.navigationBar.topItem setTitle:@"Mitto"];
     
+    //initialise the refresh controller
+    refreshControl = [[UIRefreshControl alloc] init];
+    
+    //set the title for pull request
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"Release to update..."];
+    
+    //call he refresh function
+    [refreshControl addTarget:self action:@selector(refreshMyTableView)
+             forControlEvents:UIControlEventValueChanged];
+    
+    self.refreshControl = refreshControl;
     self.transmitters = [NSMutableArray new];
     
     self.visitManager = [[FYXVisitManager alloc] init];
@@ -216,44 +237,57 @@
     // Configure the cell...
     Transmitter *tran = [self.transmitters objectAtIndex:indexPath.row];
     cell.label.text = tran.name;
+    
     if ([cell.label.text isEqualToString:@"Shana"]) {
-        //[self downloadImage:cell :@"http://rack.1.mshcdn.com/media/ZgkyMDEzLzExLzEyLzc1L2FpcmJuYi45MGI0OC5qcGcKcAl0aHVtYgkxMjAweDYyNyMKZQlqcGc/549d0831/671/airbnb.jpg"];
-        UIImage *image = [UIImage imageNamed:@"cool-office-space.jpg"];
+        UIImage *image = [UIImage imageNamed:@"apartment-2.png"];
+        [cell.imageView setImage:image];
+    } else if ([cell.label.text isEqualToString:@"Maroun"]){
+        UIImage *image = [UIImage imageNamed:@"job2x.png"];
+        [cell.imageView setImage:image];
+    } else if ([cell.label.text isEqualToString:@"Quintin"]){
+        UIImage *image = [UIImage imageNamed:@"bicycle2x.png"];
+        [cell.imageView setImage:image];
+    }  else if ([cell.label.text isEqualToString:@"Marlena"]){
+        UIImage *image = [UIImage imageNamed:@"tesla.png"];
         [cell.imageView setImage:image];
     }
+
+    
     return cell;
 }
--(void)downloadImage :(Cell *)cell :(NSString *)urlToPass {
-    //Download images in background so it doesn't lag.
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        NSString *imageUrl = [NSString stringWithFormat:@"%@",urlToPass];
-        //http://%@/favicon.ico
-        NSURL  *url = [NSURL URLWithString:imageUrl];
-        NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-        [cell.activityLoader startAnimating];
-        
-        //set your image on main thread.
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (data) {
-                [cell.imageView setImage:[UIImage imageWithData:data]];
-            }else{
-                
-                [cell.imageView setImage:[UIImage imageNamed:@"emptyspace.png"]];
-                
-            }
-            [cell.activityLoader stopAnimating];
-            [cell.activityLoader setHidesWhenStopped:YES];
-            
-        });
-        
-    });
+
+/*-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+   // DetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
+    //detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    //[self presentViewController:detail animated:YES completion:nil];
+}*/
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"detail"])
+    {
+        DetailViewController *detail = [segue destinationViewController];
+    }
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    DetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
-    detail.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:detail animated:YES completion:nil];
+
+
+-(void)refreshMyTableView{
+    
+    //set the title while refreshing
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"Refreshing the TableView"];
+    //set the date and time of refreshing
+    NSDateFormatter *formattedDate = [[NSDateFormatter alloc]init];
+    [formattedDate setDateFormat:@"MMM d, h:mm a"];
+    NSString *lastupdated = [NSString stringWithFormat:@"Last Updated on %@",[formattedDate stringFromDate:[NSDate date]]];
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:lastupdated];
+    [self.transmitters removeAllObjects];
+    [self.tableView reloadData];
+    //end the refreshing
+    [refreshControl endRefreshing];
+    
 }
 
+- (IBAction)add:(id)sender {
+}
 @end
