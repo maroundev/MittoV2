@@ -25,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
     
     
 }
@@ -61,7 +62,7 @@
 
 - (void)serviceStarted
 {
-    NSLog(@"#########Proximity service started!");
+   // NSLog(@"#########Proximity service started!");
     
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"fyx_service_started_key"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -70,7 +71,7 @@
 
 - (void)startServiceFailed:(NSError *)error
 {
-    NSLog(@"#########Proximity service failed to start! error is: %@", error);
+   // NSLog(@"#########Proximity service failed to start! error is: %@", error);
     
     NSString *message = @"Service failed to start, please check to make sure your Application Id and Secret are correct.";
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Proximity Service"

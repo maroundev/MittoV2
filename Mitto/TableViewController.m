@@ -81,19 +81,19 @@
 
 - (void)didArrive:(FYXVisit *)visit
 {
-    NSLog(@"############## didArrive: %@", visit);
+    //NSLog(@"############## didArrive: %@", visit);
 }
 
 - (void)didDepart:(FYXVisit *)visit
 {
-    NSLog(@"############## didDepart: %@", visit);
+    //NSLog(@"############## didDepart: %@", visit);
 
    
 }
 
 - (void)receivedSighting:(FYXVisit *)visit updateTime:(NSDate *)updateTime RSSI:(NSNumber *)RSSI
 {
-    NSLog(@"############## receivedSighting: %@", visit);
+   // NSLog(@"############## receivedSighting: %@", visit);
     
     Transmitter *transmitter = [[self.transmitters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == %@", visit.transmitter.identifier]] firstObject];
     if (transmitter == nil)

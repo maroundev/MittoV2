@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141A9AEB19A98C4D00271DEB /* Background2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AEA19A98C4D00271DEB /* Background2x.png */; };
 		141A9AED19A98F2700271DEB /* Nav Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 141A9AEC19A98F2700271DEB /* Nav Bar.png */; };
 		144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25DE19A987450077C833 /* Opacity Bar 2.png */; };
 		144D25E119A987800077C833 /* Opacity Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 144D25E019A987800077C833 /* Opacity Bar.png */; };
@@ -49,6 +48,9 @@
 		14FBCCF219A93A8B00332BEF /* Transmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF119A93A8B00332BEF /* Transmitter.m */; };
 		14FBCCF619A9404200332BEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCF519A9404200332BEF /* Settings.bundle */; };
 		14FBCCF919A9435A00332BEF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF819A9435A00332BEF /* DetailViewController.m */; };
+		B282AEBD19A9929C00ED71C9 /* MContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B282AEBC19A9929C00ED71C9 /* MContainerViewController.m */; };
+		B282AEBF19A9B8B700ED71C9 /* LoginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEBE19A9B8B700ED71C9 /* LoginBackground.png */; };
+		B282AEC119A9BA4D00ED71C9 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEC019A9BA4D00ED71C9 /* Login.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		141A9AEA19A98C4D00271DEB /* Background2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background2x.png; sourceTree = "<group>"; };
 		141A9AEC19A98F2700271DEB /* Nav Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav Bar.png"; sourceTree = "<group>"; };
 		144D25DE19A987450077C833 /* Opacity Bar 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar 2.png"; sourceTree = "<group>"; };
 		144D25E019A987800077C833 /* Opacity Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opacity Bar.png"; sourceTree = "<group>"; };
@@ -113,6 +114,10 @@
 		14FBCCF519A9404200332BEF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		14FBCCF719A9435A00332BEF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		14FBCCF819A9435A00332BEF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B282AEBB19A9929C00ED71C9 /* MContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MContainerViewController.h; sourceTree = "<group>"; };
+		B282AEBC19A9929C00ED71C9 /* MContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MContainerViewController.m; sourceTree = "<group>"; };
+		B282AEBE19A9B8B700ED71C9 /* LoginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground.png; sourceTree = "<group>"; };
+		B282AEC019A9BA4D00ED71C9 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +159,9 @@
 		14E5E4D619A972D0001E5A72 /* pics4menu */ = {
 			isa = PBXGroup;
 			children = (
+				B282AEC019A9BA4D00ED71C9 /* Login.png */,
+				B282AEBE19A9B8B700ED71C9 /* LoginBackground.png */,
 				141A9AEC19A98F2700271DEB /* Nav Bar.png */,
-				141A9AEA19A98C4D00271DEB /* Background2x.png */,
 				144D25DE19A987450077C833 /* Opacity Bar 2.png */,
 				144D25E019A987800077C833 /* Opacity Bar.png */,
 				14E5E4E919A9747C001E5A72 /* apartment-2.png */,
@@ -222,6 +228,8 @@
 				14FBCCA419A92D6F00332BEF /* MViewController.m */,
 				14FBCCF019A93A8B00332BEF /* Transmitter.h */,
 				14FBCCF119A93A8B00332BEF /* Transmitter.m */,
+				B282AEBB19A9929C00ED71C9 /* MContainerViewController.h */,
+				B282AEBC19A9929C00ED71C9 /* MContainerViewController.m */,
 				14FBCCA619A92D6F00332BEF /* Images.xcassets */,
 				14FBCC9219A92D6F00332BEF /* Supporting Files */,
 			);
@@ -402,6 +410,7 @@
 				14FBCCA719A92D6F00332BEF /* Images.xcassets in Resources */,
 				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
 				141A9AED19A98F2700271DEB /* Nav Bar.png in Resources */,
+				B282AEC119A9BA4D00ED71C9 /* Login.png in Resources */,
 				144D25DF19A987450077C833 /* Opacity Bar 2.png in Resources */,
 				14E5E4EC19A97661001E5A72 /* MittoBlue.png in Resources */,
 				14E5E4E719A973FB001E5A72 /* bicycle2x.png in Resources */,
@@ -409,9 +418,9 @@
 				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
 				14E5E4E819A973FB001E5A72 /* tesla.png in Resources */,
 				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
-				141A9AEB19A98C4D00271DEB /* Background2x.png in Resources */,
 				144D25E119A987800077C833 /* Opacity Bar.png in Resources */,
 				14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */,
+				B282AEBF19A9B8B700ED71C9 /* LoginBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +443,7 @@
 				14FBCC9819A92D6F00332BEF /* main.m in Sources */,
 				14FBCCA519A92D6F00332BEF /* MViewController.m in Sources */,
 				14FBCCF219A93A8B00332BEF /* Transmitter.m in Sources */,
+				B282AEBD19A9929C00ED71C9 /* MContainerViewController.m in Sources */,
 				14FBCCE619A936BE00332BEF /* TableViewController.m in Sources */,
 				14FBCCEF19A939E200332BEF /* Cell.m in Sources */,
 				14FBCCF919A9435A00332BEF /* DetailViewController.m in Sources */,
