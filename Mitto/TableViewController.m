@@ -87,14 +87,8 @@
 - (void)didDepart:(FYXVisit *)visit
 {
     NSLog(@"############## didDepart: %@", visit);
-    
-    Transmitter *transmitter = [[self.transmitters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == %@", visit.transmitter.identifier]] firstObject];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.transmitters indexOfObject:transmitter] inSection:0];
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    if ([cell isKindOfClass:[cell class]])
-    {
-        [self grayOutSightingsCell:((Cell*)cell)];
-    }
+
+   
 }
 
 - (void)receivedSighting:(FYXVisit *)visit updateTime:(NSDate *)updateTime RSSI:(NSNumber *)RSSI
@@ -136,41 +130,6 @@
     }
 }
 
-- (float)barWidthForRSSI:(NSNumber *)rssi
-{
-    NSInteger barMaxValue = [[NSUserDefaults standardUserDefaults] integerForKey:@"rssi_bar_max_value"];
-    NSInteger barMinValue = [[NSUserDefaults standardUserDefaults] integerForKey:@"rssi_bar_min_value"];
-    
-    float rssiValue = [rssi floatValue];
-    float barWidth;
-    if (rssiValue >= barMaxValue)
-    {
-        barWidth = 270.0f;
-    }
-    else if (rssiValue <= barMinValue)
-    {
-        barWidth = 5.0f;
-    } else
-    {
-        NSInteger barRange = barMaxValue - barMinValue;
-        float percentage = (barMaxValue - rssiValue) / (float)barRange;
-        barWidth = (1.0f - percentage) * 270.0f;
-    }
-    return barWidth;
-}
-
-- (void)grayOutSightingsCell:(Cell *)sightingsCell
-{
-    if (sightingsCell)
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            sightingsCell.contentView.alpha = 0.3f;
-            CGRect oldFrame = sightingsCell.imageView.frame;
-            sightingsCell.imageView.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, 0, oldFrame.size.height);
-            sightingsCell.isGrayedOut = YES;
-        });
-    }
-}
 
 
 
