@@ -41,6 +41,7 @@
 		14FBCCF219A93A8B00332BEF /* Transmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF119A93A8B00332BEF /* Transmitter.m */; };
 		14FBCCF619A9404200332BEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14FBCCF519A9404200332BEF /* Settings.bundle */; };
 		14FBCCF919A9435A00332BEF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FBCCF819A9435A00332BEF /* DetailViewController.m */; };
+		B282AEBA19A9876C00ED71C9 /* Background2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B282AEB919A9876C00ED71C9 /* Background2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		14FBCCF519A9404200332BEF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		14FBCCF719A9435A00332BEF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		14FBCCF819A9435A00332BEF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B282AEB919A9876C00ED71C9 /* Background2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		14FBCC9119A92D6F00332BEF /* Mitto */ = {
 			isa = PBXGroup;
 			children = (
+				B282AEB919A9876C00ED71C9 /* Background2x.png */,
 				14F16EF019A964D4007E801C /* cool-office-space.jpg */,
 				14FBCC9A19A92D6F00332BEF /* MAppDelegate.h */,
 				14FBCC9B19A92D6F00332BEF /* MAppDelegate.m */,
@@ -370,6 +373,7 @@
 				14FBCC9F19A92D6F00332BEF /* Main_iPhone.storyboard in Resources */,
 				14FBCCD419A935E800332BEF /* DataModels.bundle in Resources */,
 				14F16EF119A964D4007E801C /* cool-office-space.jpg in Resources */,
+				B282AEBA19A9876C00ED71C9 /* Background2x.png in Resources */,
 				14FBCCF619A9404200332BEF /* Settings.bundle in Resources */,
 				14FBCC9619A92D6F00332BEF /* InfoPlist.strings in Resources */,
 			);
